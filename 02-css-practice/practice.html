@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+
+        height: 2000px;
+      }
+
+      .spacer {
+        height: 300px;
+
+        background-color: lightgray;
+      }
+
+      .container {
+        height: 600px;
+
+        background-color: darkgray;
+
+        padding: 20px;
+      }
+
+      .sticky-box {
+        width: 120px;
+
+        height: 80px;
+
+        background-color: darkblue;
+
+        color: white;
+
+        position: sticky;
+
+        top: 20px;
+      }
+
+      .content {
+        height: 1000px;
+
+        background-color: beige;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="spacer">Scroll down</div>
+
+    <div class="container">
+      <div class="sticky-box">Sticky</div>
+    </div>
+
+    <div class="content">After container</div>
+  </body>
+</html>
