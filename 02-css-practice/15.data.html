@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -12,12 +12,21 @@
         background-color: tomato;
         margin-bottom: 50px;
       }
+      div[data-display-name="donghoon"] {
+        background-color: beige;
+      }
     </style>
   </head>
   <body>
-    <div>드림!!</div>
-    <div></div>
-    <span>드림!!</span>
-    <script></script>
+    <div data-index="1" data-display-name="donghoon">hoonie!!</div>
+    <div data-index="1" data-display-name="coding"></div>
+    <span data-index="1" data-display-name="donghoon">hoonie!!</span>
+    <script>
+      const donghoonDiv = document.querySelector(
+        'div[data-display-name="donghoon"]',
+      );
+      console.log(donghoonDiv.dataset);
+      console.log(donghoonDiv.dataset.displayName);
+    </script>
   </body>
 </html>
